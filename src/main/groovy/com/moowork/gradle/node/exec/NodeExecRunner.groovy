@@ -14,7 +14,7 @@ class NodeExecRunner
     protected ExecResult doExecute()
     {
         def exec = 'node'
-        if ( this.ext.download )
+        if ( this.ext.download || this.ext.downloaded )
         {
             def nodeEnvironment = [:]
             def nodeBinDirPath = this.variant.nodeBinDir.getAbsolutePath()

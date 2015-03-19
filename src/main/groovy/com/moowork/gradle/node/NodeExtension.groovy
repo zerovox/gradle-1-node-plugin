@@ -16,6 +16,8 @@ class NodeExtension
 
     def boolean download = false
 
+    def boolean downloaded = false
+
     NodeExtension( final Project project )
     {
         this.workDir = new File( project.gradle.gradleUserHomeDir, 'nodejs' )

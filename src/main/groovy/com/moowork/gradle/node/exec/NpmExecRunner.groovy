@@ -14,7 +14,7 @@ class NpmExecRunner
     @Override
     protected ExecResult doExecute()
     {
-        if ( !this.ext.download )
+        if ( !this.ext.download && !this.ext.downloaded )
         {
             return run( 'npm', this.arguments )
         }
