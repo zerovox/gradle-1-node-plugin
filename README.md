@@ -1,14 +1,10 @@
-Gradle plugin for Node
+Gradle 1 plugin for Node
 =======================
+
+You probably shoudln't use this. It was forked from [gradle-node-plugin](https://github.com/srs/gradle-node-plugin) at version 0.4 for use in a Gradle 1 project, and customized slightly
 
 This plugin enables you to run any NodeJS script as part of your build. It does not depend on NodeJS (or NPM) being installed on
 your system. Fist time it will download NodeJS distribution and unpack it into your local .gradle directory and run it from there.
-
-Status
-------
-
-* Build: [![Build Status](https://travis-ci.org/srs/gradle-node-plugin.png?branch=master)](https://travis-ci.org/srs/gradle-node-plugin)
-* Download: [![Download](https://api.bintray.com/packages/srs/maven/gradle-node-plugin/images/download.png)](https://bintray.com/srs/maven/gradle-node-plugin)
 
 Installing the plugin
 ---------------------
@@ -21,7 +17,7 @@ Setup the plugin like this:
 			jcenter()
 		}
     	dependencies {
-			classpath 'com.moowork.gradle:gradle-node-plugin:0.4'
+			classpath 'zerovox.gradle:gradle-1-node-plugin:0.1'
     	}
 	}
 
